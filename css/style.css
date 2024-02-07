@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+.main_container{
+    height: 100vh;
+    background-color: #414141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 5rem 0;
+}
+
+.weather_app{
+    width: 90%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    background: linear-gradient(135deg, #426488,#2c3e50, #133449,#3498db);
+    height: 700px;
+    max-width: 500px;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.search_detail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.search_detail input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 16px;
+    font-size: 16px;
+    box-shadow: -2px 10px 8px -3px rgba(0,0,0,0.75);
+
+}
+
+.search_detail button{
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: -2px 10px 8px -3px rgba(0,0,0,0.75);
+
+}
+
+.search_detail button img{
+    width: 16px;
+}
+
+
+.temperature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color:#ebfffc;
+}
+
+.temperature img{
+    width: 100px;
+}
+.temperature h1{
+    margin-top: 10px;
+}
+
+.temperature h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.cloud_wind{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 1rem;
+}
+
+.humidity img{
+    width: 40px;
+}
+
+
+.value{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.value h3{
+    font-size: 1rem;
+}
+
+.value span{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+
+
+@media (max-width:450px) {
+
+    .main_container{
+        padding: 0rem;
+    }
+    .search_detail input{
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .search_detail button{
+        width:40px;
+        height: 37px;
+    }
+
+
+    .cloud_wind{
+        flex-direction: column;
+        gap: 1.2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .weather_app{
+        max-width: 830px;
+        height: 450px;
+        padding: 1.6rem 0.5rem;
+    }
+
+    .temperature h2{
+        font-size: 1.4rem;
+    }
+
+    .humidity .value span{
+        font-size: 1.3rem;
+    }
+
+
+
+}
+
+
+
